@@ -1,0 +1,52 @@
+.auth__inactive-zone {
+  position: absolute;
+  z-index: 10000;
+  display: block;
+  width: 100%;
+  min-height: 100%;
+  background-color: rgba(0,0,0,0.5);
+
+  div {
+    width: 400px;
+    margin: 10vh auto 0;
+    padding:100px 25px 140px;
+    font-family: "Gotham Pro", Verdana, sans-serif;
+    color: #000000;
+    background-color: #FFFFFF;
+
+    p {
+      text-align: center;
+      font-size: 18px;
+    }
+
+    a {
+      text-decoration: none;
+      float: right;
+      font-size: 10px;
+      margin-top: 10px;
+      color: #3588DD;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    div {
+      margin-top: 45px;
+      padding: 0;
+      width: 400px;
+      box-sizing: border-box;
+
+      p {
+        color: rgba(0,0,0,0.6);
+        height: 10px;
+        font-size: 10px;
+        margin: 0 auto;
+      }
+
+      a {
+        float: none;
+      }
+    }
+  }
+}

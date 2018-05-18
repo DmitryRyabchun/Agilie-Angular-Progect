@@ -1,0 +1,20 @@
+div {
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      float: left;
+      list-style-type: none;
+      width: 33%;
+      text-align: center;
+      line-height: 70px;
+      transition-duration: 0.2s;
+      cursor: pointer;
+    }
+
+    li:hover {
+      transition-duration: 0.2s;
+      color: #E84F3C;
+    }
+  }
+}

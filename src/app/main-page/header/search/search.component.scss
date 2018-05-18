@@ -1,0 +1,36 @@
+div {
+  input {
+    height: 40px;
+    width: 90%;
+    border-radius: 33px;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 8px 0 rgba(232,79,60,0.62);
+    color: #E84F3C;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 0 4%;
+    outline:none;
+  }
+
+  input::-webkit-input-placeholder {
+    color: #E84F3C;
+  }
+}
+
+@media screen and (max-width: 800px){
+  div {
+    input {
+      font-size: 14px;
+      height: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 700px){
+  div {
+    input {
+      font-size: 10px;
+      height: 20px;
+    }
+  }
+}

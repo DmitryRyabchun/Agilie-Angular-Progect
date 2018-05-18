@@ -1,0 +1,21 @@
+div {
+  height: 40px;
+  width: 400px;
+  border-radius: 3px;
+  background-color: #2D4B91;
+  cursor: pointer;
+
+  img {
+    float: left;
+    height: 52px;
+    margin: -6px 20px 0px -6px;
+  }
+
+  p {
+    font-family: "Gotham Pro", Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+    line-height: 40px;
+  }
+}

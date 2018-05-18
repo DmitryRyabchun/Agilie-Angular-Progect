@@ -1,0 +1,9 @@
+<div class="auth__inactive-zone">
+  <div>
+    <input type="text" placeholder="Enter your email*" #reg_email>
+    <input type="password" placeholder="Enter password*" #reg_pass>
+    <div class="email-login__btn" (click)="auth.emailSignUp(reg_email.value, reg_pass.value)">
+      <p>Sing Up</p>
+    </div>
+  </div>
+</div>

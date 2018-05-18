@@ -1,0 +1,53 @@
+div {
+  select {
+    border-color: #282828;
+    font-family: "Gotham Pro", Verdana, sans-serif;
+    font-size: 18px;
+    color: #FFFFFF;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0);
+    outline: 0;
+    transition-duration: 0.2s;
+
+    option {
+      outline: 0;
+      background: #282828;
+      padding: 0;
+      border: 0;
+    }
+  }
+}
+
+div:hover {
+  select {
+    transition-duration: 0.2s;
+    color: #E84F3C;
+    option {
+      color: #FFFFFF;
+    }
+  }
+}
+
+@media screen and (max-width: 1010px){
+  div {
+    select {
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 800px){
+  div {
+    select {
+      font-size: 14px;
+    }
+  }
+}
+
+@media screen and (max-width: 700px){
+  div {
+    select {
+      font-size: 10px;
+    }
+  }
+}

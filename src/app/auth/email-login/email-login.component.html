@@ -1,0 +1,10 @@
+<div>
+  <input type="text" placeholder="You email address or profile URL *" #email>
+  <input type="password" placeholder="You password*" #password>
+  <div class="email-login__btn" (click)="auth.emailSignIn(email.value, password.value)">
+    <p>Continue</p>
+  </div>
+  <div class="email-login__sing-up">
+    <p routerLink="/reg">Sign Up</p>
+  </div>
+</div>
