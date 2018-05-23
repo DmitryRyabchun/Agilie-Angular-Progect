@@ -21,6 +21,10 @@ import {RouterModule} from '@angular/router';
 import {routes} from './routes';
 import {AuthService} from './services/auth.service';
 import { RegComponent } from './reg/reg.component';
+import {AngularFireDatabaseModule} from 'angularfire2/database';
+import { MessageComponent } from './main-page/dashboard/message/message.component';
+import { SettingsComponent } from './settings/settings.component';
+import {AngularFireStorageModule} from 'angularfire2/storage';
 
 @NgModule({
   declarations: [
@@ -36,13 +40,17 @@ import { RegComponent } from './reg/reg.component';
     SearchComponent,
     MainComponent,
     DashboardComponent,
-    RegComponent
+    RegComponent,
+    MessageComponent,
+    SettingsComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes),
     AngularFireModule.initializeApp(firebaseConfig),
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    AngularFireDatabaseModule,
+    AngularFireStorageModule
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]
