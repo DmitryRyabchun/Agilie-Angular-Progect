@@ -10,6 +10,7 @@ div {
   max-width: 1220px;
   z-index: 100;
   font-size: 18px;
+  font-family: "Gotham Pro", Verdana, sans-serif;
 
   app-left-menu {
     width: 33.3%;
@@ -20,9 +21,12 @@ div {
     width: 33.3%;
   }
 
-  app-right-menu {
+  app-right-menu, app-auth-user {
     width: 25%;
+    overflow: hidden;
+    white-space: nowrap;
     vertical-align: middle;
+    display: inline-block;
   }
 
   app-language-selection {
@@ -39,11 +43,13 @@ div {
 @media screen and (max-width: 800px){
   div {
     font-size: 14px;
+    height: 60px;
   }
 }
 
 @media screen and (max-width: 700px){
   div {
     font-size: 10px;
+    height: 40px;
   }
 }

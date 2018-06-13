@@ -25,3 +25,23 @@ div {
 
   }
 }
+
+@media screen and (max-width: 800px){
+  div {
+    ul {
+      li {
+        line-height: 60px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px){
+  div {
+    ul {
+      li {
+        line-height: 40px;
+      }
+    }
+  }
+}

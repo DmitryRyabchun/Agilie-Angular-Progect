@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {LastfmService} from '../../../services/lastfm.service';
+import {SearchService} from '../../../services/search.service';
 
 @Component({
   selector: 'app-search',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchComponent implements OnInit {
 
-  constructor() { }
+  constructor(private lastfm: LastfmService, private search:SearchService) {
+    this.lastfm.TopArtists();
+  }
 
   ngOnInit() {
   }
 
+  keyDown(event, search) {
+    if(event.keyCode == 13) {
+      this.search.keyDownFunction(event, search);
+    }
+  }
 }

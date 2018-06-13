@@ -1,0 +1,184 @@
+.top-artists__container {
+  padding: 125px 48px 0;
+  font-family: "Gotham Pro", Verdana, sans-serif;
+  clear: both;
+
+  .top-artists__tor-artist {
+    background-color: lightgray;
+    background-size: 100% !important;
+    width: 43.239%;
+    font-size: 36px;
+    line-height: 0;
+    float: left;
+    box-shadow: 0 4px 8px 0 rgba(20,19,24,0.64);
+    div {
+      width: 100%;
+      padding-top: 90%;
+      padding-bottom: 10%;
+      p {
+        display: block;
+        margin: 0 5%;
+        height: 100%;
+      }
+      @media screen and (max-width: 900px) {
+        p {
+          font-size: 25px;
+        }
+      }
+      @media screen and (max-width: 700px) {
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .top-artists__tor-artist_albums {
+    width: 55.871%;
+    float: right;
+    div {
+      width: 50%;
+      height: 45%;
+      float: left;
+      .top-artists__albun-block {
+        width: 75%;
+
+        box-shadow: 0 4px 8px 0 rgba(20,19,24,0.64);
+        background-color: lightgray;
+        float: right;
+        margin-left: 10px;
+        padding-top: 53.1%;
+        padding-bottom: 5%;
+        .albun-block_name{
+          margin: 0;
+          padding: 0;
+          display: block;
+          width: 100%;
+          height: 0;
+          font-size: 20px;
+          margin-left: 10px;
+        }
+        .albun-block_treck-count {
+          margin-bottom: 0;
+          margin-left: 10px;
+          margin-top: 15%;
+          font-size: 12px;
+        }
+
+        @media screen and (max-width: 900px) {
+          .albun-block_name {
+            font-size: 16px;
+          }
+          .albun-block_treck-count {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+    .margin {
+      margin-top: 5%;
+    }
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  .top-artists__container {
+    padding: 100px 28px 0;
+
+    .top-artists__tor-artist {
+      float: none;
+      margin: 0 auto;
+    }
+
+    .top-artists__tor-artist_albums {
+      width: 100%;
+      padding: 5% 2%;
+      div {
+        width: 25%;
+        .top-artists__albun-block {
+          width: 90%;
+          margin-right: 10%;
+          padding-top: 60%;
+          display: block;
+          margin: 0 auto;
+        }
+      }
+      .margin {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .top-artists__container {
+    padding: 80px 18px 0;
+
+    .top-artists__tor-artist {
+      margin: 0 auto;
+      font-size: 16px;
+    }
+
+    .top-artists__tor-artist_albums {
+      width: 100%;
+      div {
+        width: 50%;
+        .top-artists__albun-block {
+          width: 75%;
+          margin-right: 10%;
+          padding-top: 50%;
+          display: block;
+
+        }
+        .margin {
+          margin-top: 5%;
+        }
+      }
+    }
+  }
+}
+
+.top-artists__artists_container {
+  padding-top: 20px;
+  width: 94%;
+  margin-left: 3%;
+  clear: both;
+  overflow: auto;
+
+  .header {
+    font-size: 30px;
+    font-family: "Gotham Pro",Verdana, sans-serif;
+    color: black;
+    margin: 5px 0px 10px 11px;
+  }
+
+  .top-artists__artists {
+    width: 20%;
+    float: left;
+    img {
+      box-shadow: 0 4px 8px 0 rgba(20,19,24,0.64);
+      width: 90%;
+      height: 90%;
+      margin-left: 5%;
+    }
+    p {
+      margin-top: -30px;
+      margin-left: 10%;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .top-artists__artists_container {
+    padding-top: 20px;
+    width: 94%;
+    margin-left: 3%;
+    .top-artists__artists:nth-child(1), .top-artists__artists:nth-child(2), .top-artists__artists:nth-child(3){
+      width: 33.33%;
+    }
+    .top-artists__artists:nth-child(4), .top-artists__artists:nth-child(5){
+      width: 50%;
+    }
+  }
+}

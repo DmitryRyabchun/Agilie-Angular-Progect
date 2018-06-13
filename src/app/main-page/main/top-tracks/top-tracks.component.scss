@@ -1,0 +1,43 @@
+.top-albums__albums_container {
+  padding-top: 20px;
+  width: 94%;
+  margin-left: 3%;
+  clear: both;
+  overflow: auto;
+
+  .header {
+    font-size: 30px;
+    font-family: "Gotham Pro",Verdana, sans-serif;
+    color: black;
+    margin: 5px 0px 10px 11px;
+  }
+
+  .top-albums__albums {
+    width: 20%;
+    float: left;
+    img {
+      box-shadow: 0 4px 8px 0 rgba(20,19,24,0.64);
+      width: 90%;
+      height: 90%;
+      margin-left: 5%;
+    }
+    p {
+      margin-top: -30px;
+      margin-left: 10%;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .top-albums__albums_container {
+    padding-top: 20px;
+    width: 94%;
+    margin-left: 3%;
+    .top-albums__albums:nth-child(2), .top-albums__albums:nth-child(3), .top-albums__albums:nth-child(4){
+      width: 33.33%;
+    }
+    .top-albums__albums:nth-child(5), .top-albums__albums:nth-child(6){
+      width: 50%;
+    }
+  }
+}

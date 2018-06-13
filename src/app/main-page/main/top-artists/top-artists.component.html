@@ -1,0 +1,39 @@
+<div class="top-artists__container" *ngIf="isLoad">
+  <div class="top-artists__tor-artist" [ngStyle]="{'background':getBeckground(dataTopArtist.artist[0].image[4]['#text'])}">
+    <div><p>{{dataTopArtist.artist[0].name}}</p></div>
+  </div>
+  <div class="top-artists__tor-artist_albums">
+    <div>
+      <div class="top-artists__albun-block" [ngStyle]="{'background':getBeckground(dataTopArtistsAlbums.album[0].image[0]['#text'])}">
+        <p class="albun-block_name">{{dataTopArtistsAlbums.album[0].name}}</p>
+        <p class="albun-block_treck-count"></p>
+      </div>
+    </div>
+    <div>
+      <div class="top-artists__albun-block" [ngStyle]="{'background':getBeckground(dataTopArtistsAlbums.album[1].image[0]['#text'])}">
+        <p class="albun-block_name">{{dataTopArtistsAlbums.album[1].name}}</p>
+        <p class="albun-block_treck-count"></p>
+      </div>
+    </div>
+    <div>
+      <div class="top-artists__albun-block margin" [ngStyle]="{'background':getBeckground(dataTopArtistsAlbums.album[2].image[0]['#text'])}">
+        <p class="albun-block_name">{{dataTopArtistsAlbums.album[2].name}}</p>
+        <p class="albun-block_treck-count"></p>
+      </div>
+    </div>
+    <div>
+      <div class="top-artists__albun-block margin" [ngStyle]="{'background':getBeckground(dataTopArtistsAlbums.album[3].image[0]['#text'])}">
+        <p class="albun-block_name">{{dataTopArtistsAlbums.album[3].name}}</p>
+        <p class="albun-block_treck-count"></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="top-artists__artists_container">
+  <p class="header">Top artists</p>
+  <div class="top-artists__artists" *ngFor="let item of TopArtists">
+    <img [src]="item.image[3]['#text']" alt="">
+    <p>{{item.name}}</p>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+<div class="contaner">
+  <p>Profile Settings</p>
+  <div class="changeUserData">
+    <div class="changeAvatar">
+      <div>
+        <div>
+          <img [src]="user?.avatar" alt="" width="100">
+        </div>
+      </div>
+      <div class="avatar__btn">
+        <label>
+          <input type="file" (change)="changeAvatar($event)">
+          <p>Upload</p>
+        </label>
+        <p (click)="deleteAvatar()">Delete</p>
+      </div>
+    </div>
+    <form class="changeData">
+      <label for="Name">Name</label>
+      <input type="text" id="Name" [value]="user?.name" #UserName>
+      <label for="Email">Email</label>
+      <input type="text" id="Email" [value]="user?.email" #UserEmail>
+      <label for="Pass">Passwords</label>
+      <input type="text" id="Pass" #Pass>
+      <div class="button-block">
+        <button (click)="changeData(UserName.value, UserEmail.value, Pass.value)">Save</button>
+        <button class="delete-account" (click)="deleteUser()">Delete your account</button>
+      </div>
+    </form>
+  </div>
+</div>
+

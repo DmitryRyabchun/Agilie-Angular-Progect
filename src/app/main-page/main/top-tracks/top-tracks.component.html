@@ -1,0 +1,7 @@
+<div class="top-albums__albums_container" *ngIf="isLoad">
+  <p class="header">Top tracks</p>
+  <div class="top-albums__albums" *ngFor="let item of TopTracks">
+    <img [src]="item.image[3]['#text']" alt="">
+    <p>{{item.name}}</p>
+  </div>
+</div>

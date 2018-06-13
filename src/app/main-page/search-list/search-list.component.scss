@@ -1,0 +1,37 @@
+.container {
+  font-family: "Gotham Pro", Verdana, sans-serif;
+  padding-top: 89px;
+  color: black;
+  min-height: calc(100vh - 190px);
+  margin-bottom: 15px;
+  .search__list-item {
+    height: 60px;
+    background-color: lightgray;
+    margin: 1% 3%;
+    font-size: 18px;
+    border-radius: 5px;
+    overflow: auto;
+    box-shadow: 0 4px 8px 0 rgba(20, 19, 24, 0.64);
+    img {
+      height: 50px;
+      margin-top: 5px;
+      border-radius: 50%;
+      float: left;
+      margin-left: 10px;
+    }
+    .search__list-item_name {
+      margin: 18px 0 -40px 0;
+      padding-left: 75px;
+    }
+    .search__list-item_buttons {
+      img {
+        float: right;
+        margin-right: 5px;
+      }
+
+      img:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

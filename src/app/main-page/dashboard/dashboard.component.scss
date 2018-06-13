@@ -1,0 +1,125 @@
+.dashboard__button {
+  .dashboard__button_main-part {
+    border-radius: 3px 3px 0 3px;
+    background-color: #FFFFFF;
+    padding: 12px;
+    box-shadow: 0 4px 7px 0 #881608, 0 9px 17px 0 rgba(47,19,80,0.59);
+    transition-duration: 0.2s;
+    div {
+      box-sizing: border-box;
+      height: 3px;
+      width: 35px;
+      border: 2px solid #141318;
+      margin: 2px 0;
+      background-color: black;
+      transition-duration: 0.2s;
+    }
+  }
+  .dashboard__button_second-part {
+    width: 0;
+    height: 0;
+    background-color: rgba(1,0,0,0);
+    border-top: 5px solid white;
+    border-left: 15px solid transparent;
+    float: right;
+  }
+}
+
+.dashboard__button:hover {
+  cursor: pointer;
+  .dashboard__button_main-part {
+    box-shadow: 0 8px 7px 0 #881608, 0 9px 17px 0 rgba(47,19,80,0.59);
+    padding: 10px 11px;
+    div {
+      width: 37px;
+      border-width: 3px;
+      transition-duration: 0.2s;
+    }
+  }
+  .dashboard__button_second-part {
+  }
+}
+
+
+.dashboard__window {
+  background-color: #141318;
+  width: 320px;
+  height: 325px;
+  padding-top: 40px;
+  border-radius: 13px;
+  .dashboard__list-message {
+    background-color: #FFFFFF;
+    height: 250px;
+    overflow: scroll;
+    color: black;
+    overflow-x: hidden;
+  }
+
+  .dashboard__text {
+    textarea {
+      width: 280px;
+      height: 32px;
+      resize: none;
+      border-width: 1px 0 1px;
+      float: left;
+    }
+
+    button {
+      padding: 5px;
+      border-top: 1px solid darkgrey;
+      border-bottom: 1px solid darkgrey;
+      border-left: 0;
+      border-right: 0;
+      height: 38px;
+      background-color: #FFFFFF;
+
+      img {
+        width: 26px;
+        height: 26px;
+        transition-duration: 0.2s;
+      }
+      transition-duration: 0.2s;
+    }
+
+    textarea:focus, button:focus {
+      outline: 0;
+    }
+
+    button:hover {
+      cursor: pointer;
+      img {
+        width: 30px;
+        height: 30px;
+        transition-duration: 0.2s;
+      }
+      padding: 3px;
+      transition-duration: 0.2s;
+    }
+  }
+}
+
+.dashboard__close-button {
+  margin-top: 10px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  float: right;
+  height: 50px;
+  width: 50px;
+  box-shadow: 0 4px 7px 0 #881608, 0 9px 17px 0 rgba(47,19,80,0.59);
+  img {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    transition-duration: 0.2s;
+  }
+}
+
+.dashboard__close-button:hover {
+  cursor: pointer;
+  img {
+    width: 36px;
+    height: 36px;
+    margin: 7px;
+    transition-duration: 0.2s;
+  }
+}

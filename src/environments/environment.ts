@@ -4,5 +4,8 @@
 // The list of which env maps to which file can be found in `.angular-cli.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  apiKey: 'b565b9a8680dcdaed7c52ed46c4ff110',
+  endPoint: 'http://ws.audioscrobbler.com/2.0/',
+  format: 'json'
 };

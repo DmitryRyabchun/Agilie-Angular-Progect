@@ -1,0 +1,30 @@
+div {
+  padding-top: 25px;
+  div {
+    margin: 0 auto;
+    padding: 25px;
+    width: 370px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+
+    .not-found__404 {
+      margin-top: 0;
+      font-size: 120px;
+      margin-bottom: 0px;
+      line-height: 82px;
+    }
+    .not-found__error-text {
+      font-size: 25px;
+      margin-top: 10px;
+    }
+    .not-found__back {
+      text-decoration: none;
+      color: #E84F3C;
+    }
+
+    .not-found__back:hover {
+      text-decoration: underline;
+    }
+  }
+}

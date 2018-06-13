@@ -1,0 +1,226 @@
+div {
+  color: #000000;
+  p {
+    margin: 0% 5%;
+    padding-top: 105px;
+    font-family: "Gotham Pro", Verdana, sans-serif;
+    font-size: 36px;
+    line-height: 34px;
+  }
+
+  .changeUserData {
+    width: 90%;
+    margin: 5%;
+    display: inline-flex;
+
+    .changeAvatar {
+      width: 20%;
+      div {
+        background-color: #E84F3C;
+        width: 80px;
+        border-radius: 50%;
+        margin: 10px auto;
+        div {
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          overflow: hidden;
+          margin: 0 auto;
+
+          img {
+            width: 80px;
+            height: 80px;
+          }
+        }
+      }
+
+      .avatar__btn {
+        label, p {
+          width: 50%;
+          text-align: center;
+          font-size: 10px;
+          line-height: 10px;
+          padding-top: 0;
+          margin: 0;
+          float: left;
+          transition-duration: 0.2s;
+          input {
+            display: none;
+          }
+          p {
+            width: 100%;
+          }
+        }
+        label:hover, p:hover {
+          color: #E84F3C;
+          transition-duration: 0.2s;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .changeData {
+      width: 80%;
+      label, input {
+        display: inherit;
+      }
+
+      label {
+        font-family: "Gotham Pro", Verdana, sans-serif;
+        font-size: 18px;
+        line-height: 38px;
+      }
+
+      input {
+        padding: 10px;
+        max-width: 750px;
+        width: 100%;
+        border: 1px solid #000000;
+        border-radius: 3px;
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+
+      .button-block {
+        max-width: 772px;
+        width: 100%;
+        button, .delete-account {
+          margin-top: 10px;
+          height: 25px;
+          width: 100px;
+          border-radius: 20px;
+          background-color: #E84F3C;
+          color: #FFFFFF;
+          border: 0;
+          cursor: pointer;
+          transition-duration: 0.4s;
+        }
+
+        button:hover, .delete-account:hover {
+          background: #282828;
+          color: #FFFFFF;
+          transition-duration: 0.2s;
+        }
+
+        .delete-account {
+          background-color: white;
+          width: 140px;
+          color: #979797;
+          border: 1px solid #979797;
+          float: right;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1010px) {
+  div {
+    p {
+      padding-top: 100px;
+      font-size: 30px;
+    }
+
+    .changeUserData {
+      margin-top: 30px;
+
+      .changeData {
+        label {
+          font-size: 16px;
+        }
+        input {
+          font-size: 14px;
+          padding: 8px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  div {
+    p {
+      padding-top: 90px;
+      font-size: 25px;
+    }
+
+    .changeUserData {
+      margin-top: 25px;
+
+      .changeData {
+        label {
+          font-size: 12px;
+        }
+        input {
+          font-size: 10px;
+          padding: 6px;
+        }
+
+        .button-block {
+          button {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  div {
+    p {
+      padding-top: 60px;
+      font-size: 20px;
+    }
+
+    .changeUserData {
+      margin-top: 20px;
+
+      .changeData {
+        label {
+          line-height: 28px;
+          font-size: 10px;
+        }
+        input {
+          font-size: 9px;
+          padding: 5px;
+          margin-bottom: 5px;
+        }
+
+        .button-block {
+          button {
+            font-size: 10px;
+            height: 20px;
+          }
+        }
+      }
+
+      .changeAvatar {
+        div {
+          width: 60%;
+          margin: 10px auto;
+          div {
+            width: 60px;
+            height: 60px;
+            img {
+              width: 60px;
+              height: 60px;
+            }
+          }
+        }
+
+        .avatar__btn {
+          label, p {
+            font-size: 9px;
+            width: 100%;
+            line-height: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+.contaner {
+  min-height: calc(100vh - 100px);
+}

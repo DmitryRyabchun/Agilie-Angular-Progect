@@ -1,0 +1,51 @@
+.auth-user__container {
+
+  .auth-user__img {
+    width: 38px;
+    height: 38px;
+    background-color: #E84F3C;
+    float: left;
+    border-radius: 50%;
+    margin-top: -7px;
+    margin-right: 10px;
+    img {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      float: left;
+      margin: 0;
+    }
+  }
+
+  @media screen and (max-width: 800px){
+  .auth-user__img {
+    width: 36px;
+    height: 36px;
+    margin-top: -9px;
+    img {
+      width: 36px;
+      height: 36px;
+      margin-top: 0px;
+    }
+  }
+}
+
+  @media screen and (max-width: 700px){
+    .auth-user__img {
+      width: 28px;
+      height: 28px;
+      margin-top: -8px;
+      img {
+        width: 28px;
+        height: 28px;
+        margin-top: 0px;
+      }
+    }
+  }
+}
+
+.auth-user__container:hover {
+  color: #E84F3C;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}

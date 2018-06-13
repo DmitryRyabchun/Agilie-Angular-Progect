@@ -1,0 +1,76 @@
+.container {
+  padding-top: 90px;
+  min-height: calc(100vh - 190px);
+  overflow: auto;
+  .collection__albun {
+    .collection__album-name_container {
+      height: 50px;
+      padding-right: 10px;
+      background: lightgray;
+      border-radius: 5px;
+      margin: 10px 20px;
+      padding-left: 15px;
+      .collection__albun-name {
+        overflow: auto;
+        p {
+          margin-top: 0;
+          line-height: 50px;
+          font-size: 25px;
+          float: left;
+        }
+
+        .del, .edit {
+          float: right;
+        }
+        .del:hover, .edit:hover {
+          img {
+            cursor: pointer;
+          }
+        }
+        .edit {
+          img {
+            width: 30px;
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+    .collection__albun-list {
+      .collection__albun-list-item {
+        background-color: lightgray;
+        width: 18.18%;
+        margin-left: 1.5%;
+        height: 200px;
+        float: left;
+        margin-bottom: 10px;
+
+        .collection__albun-list-item_name {
+          margin-top: 80%;
+          margin-left: 5%;
+        }
+      }
+
+      @media screen and (max-width: 800px) {
+        .collection__albun-list-item {
+          width: 23.8%;
+          margin-left: 1%;
+
+          .collection__albun-list-item_name {
+            font-size: 16px;
+          }
+        }
+      }
+
+      @media screen and (max-width: 700px) {
+        .collection__albun-list-item {
+          width: 32%;
+          margin-left: 1%;
+
+          .collection__albun-list-item_name {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}

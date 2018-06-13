@@ -1,0 +1,9 @@
+<div class="container">
+  <div class="search__list-item" *ngFor="let item of searchResult">
+    <img [src]="item.image[1]['#text']" alt="">
+    <div class="search__list-item_name">{{item.artist + " - " + item.name}}</div>
+    <div class="search__list-item_buttons">
+      <img src="../../../assets/images/add.png" alt="" (click)="AddSong()">
+    </div>
+  </div>
+</div>

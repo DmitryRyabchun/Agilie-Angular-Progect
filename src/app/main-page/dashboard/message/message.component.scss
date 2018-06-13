@@ -1,0 +1,14 @@
+.message__container {
+  border-bottom: 1px solid lightgray;
+  img {
+    float: left;
+    border-radius: 50%;
+    margin: 10px 0;
+  }
+  div {
+    float: right;
+    width: 245px;
+    margin: 10px 0;
+  }
+  clear: both;
+}

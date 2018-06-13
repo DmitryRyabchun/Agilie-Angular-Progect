@@ -4,4 +4,11 @@ div {
   background: #FFFFFF;
   min-height: 100%;
   color: #FFFFFF;
+
+  app-dashboard {
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    z-index: 100;
+  }
 }
