@@ -21,7 +21,6 @@ import {RouterModule} from '@angular/router';
 import {routes} from './routes';
 import {AuthService} from './services/auth.service';
 import { RegComponent } from './reg/reg.component';
-<<<<<<< HEAD
 import { AuthUserComponent } from './main-page/header/auth-user/auth-user.component';
 import {CookieService} from 'ngx-cookie-service';
 import { UserMenuComponent } from './main-page/header/user-menu/user-menu.component';
@@ -47,12 +46,6 @@ import { HomeComponent } from './main-page/main/home/home.component';
 import { CollectionService } from './services/collection.service';
 import {Ng2DialogWindowModule, Ng2DialogWindowService} from '@agilie/ng2-dialog-window';
 import { EditCollectionComponent } from './main-page/collection/edit-collection/edit-collection.component';
-=======
-import {AngularFireDatabaseModule} from 'angularfire2/database';
-import { MessageComponent } from './main-page/dashboard/message/message.component';
-import { SettingsComponent } from './settings/settings.component';
-import {AngularFireStorageModule} from 'angularfire2/storage';
->>>>>>> 744881fe28c817c26761ee0177e724f928f4b385
 
 @NgModule({
   declarations: [
@@ -69,7 +62,6 @@ import {AngularFireStorageModule} from 'angularfire2/storage';
     MainComponent,
     DashboardComponent,
     RegComponent,
-<<<<<<< HEAD
     AuthUserComponent,
     UserMenuComponent,
     SettingsComponent,
@@ -83,10 +75,6 @@ import {AngularFireStorageModule} from 'angularfire2/storage';
     SearchListComponent,
     HomeComponent,
     EditCollectionComponent,
-=======
-    MessageComponent,
-    SettingsComponent
->>>>>>> 744881fe28c817c26761ee0177e724f928f4b385
   ],
   imports: [
     BrowserModule,
@@ -94,7 +82,6 @@ import {AngularFireStorageModule} from 'angularfire2/storage';
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireAuthModule,
     AngularFireDatabaseModule,
-<<<<<<< HEAD
     AngularFireStorageModule,
     FormsModule,
     HttpClientModule,
@@ -108,9 +95,6 @@ import {AngularFireStorageModule} from 'angularfire2/storage';
     LastfmService,
     SearchService,
     CollectionService,
-=======
-    AngularFireStorageModule
->>>>>>> 744881fe28c817c26761ee0177e724f928f4b385
   ],
   bootstrap: [AppComponent]
 })
