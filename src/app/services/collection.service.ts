@@ -19,6 +19,10 @@ export class CollectionService {
     });
   }
 
+  getCollections() {
+    return this.colletionData[0];
+  }
+
   ngOnInit() {
 
   }
@@ -29,10 +33,6 @@ export class CollectionService {
           name: name,
           author: author
       });
-
-    this.db.list('/collections/'+this.user.userData.uid+"/name").push({
-      name: album,
-    });
   }
 
   // delSong() {

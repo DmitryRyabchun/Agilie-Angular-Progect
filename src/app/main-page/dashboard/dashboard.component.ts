@@ -11,11 +11,7 @@ import {Observable} from 'rxjs/Observable';
 })
 export class DashboardComponent implements OnInit {
 
-<<<<<<< HEAD
   isOpen:boolean = false;
-
-=======
->>>>>>> 744881fe28c817c26761ee0177e724f928f4b385
   messages: Observable<any[]>;
   user: firebase.User;
 
@@ -28,7 +24,6 @@ export class DashboardComponent implements OnInit {
     this.auth.authState.subscribe(user => this.user = user);
   }
 
-<<<<<<< HEAD
   sendMessage(message) {
     if (message.value != "") {
       this.db.list('/messages').push({
@@ -41,19 +36,6 @@ export class DashboardComponent implements OnInit {
       }).then(() => message.value = '',
         (error) => alert(error));
     }
-=======
-
-  sendMessage(message) {
-    this.db.list('/messages').push({
-      message: message.value,
-      user: {
-        name: this.user.displayName,
-        email: this.user.email,
-        avatar: this.user.photoURL
-      }
-    }).then(() => message.value = '',
-      (error) => alert(error));
->>>>>>> 744881fe28c817c26761ee0177e724f928f4b385
   }
 
 }
