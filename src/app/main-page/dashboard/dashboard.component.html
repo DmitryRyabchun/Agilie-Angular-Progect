@@ -1,4 +1,4 @@
-<div *ngIf="!isOpen" (click)="isOpen=!isOpen" class="dashboard__button">
+<div *ngIf="!isReg.isOpen" (click)="Toggle()" class="dashboard__button">
   <div class="dashboard__button_main-part">
     <div></div>
     <div></div>
@@ -6,11 +6,9 @@
   <div class="dashboard__button_second-part"></div>
 </div>
 
-
-<div *ngIf="isOpen" class="dashboard__window">
+<div *ngIf="isReg.isOpen" class="dashboard__window">
   <div id="list_of_messages" class="dashboard__list-message">
-    <app-message *ngFor="let message of messages | async"
-                 [message]="message">
+    <app-message *ngFor="let message of messages | async" [message]="message">
     </app-message>
   </div>
 
@@ -20,5 +18,5 @@
   </div>
 </div>
 
-<div *ngIf="isOpen" (click)="isOpen=!isOpen" class="dashboard__close-button"><img src="../../assets/images/close-icon.png" alt=""></div>
+<div *ngIf="isReg.isOpen" (click)="Toggle()" class="dashboard__close-button"><img src="../../assets/images/close-icon.png" alt=""></div>
 

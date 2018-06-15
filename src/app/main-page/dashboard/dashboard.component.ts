@@ -3,6 +3,7 @@ import {AngularFireDatabase, AngularFireList} from 'angularfire2/database';
 import {AngularFireAuth} from 'angularfire2/auth';
 import * as firebase from 'firebase';
 import {Observable} from 'rxjs/Observable';
+import {AuthService} from "../../services/auth.service";
 
 @Component({
   selector: 'app-dashboard',
@@ -10,13 +11,10 @@ import {Observable} from 'rxjs/Observable';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
-
-  isOpen:boolean = false;
   messages: Observable<any[]>;
   user: firebase.User;
 
-  constructor(private db: AngularFireDatabase,
-              private auth: AngularFireAuth) {
+  constructor(private db: AngularFireDatabase, private auth: AngularFireAuth, public isReg:AuthService) {
   }
 
   ngOnInit() {
@@ -35,6 +33,14 @@ export class DashboardComponent implements OnInit {
         }
       }).then(() => message.value = '',
         (error) => alert(error));
+    }
+  }
+
+  Toggle() {
+    if(this.isReg.isReg) {
+      this.isReg.isOpen=!this.isReg.isOpen;
+    } else {
+      this.isReg.isOpen = false;
     }
   }
 

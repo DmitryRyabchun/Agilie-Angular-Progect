@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
 import { AuthComponent } from './auth/auth.component';
 import { FacebookLoginComponent } from './auth/facebook-login/facebook-login.component';
@@ -13,7 +12,6 @@ import { RightMenuComponent } from './main-page/header/right-menu/right-menu.com
 import { SearchComponent } from './main-page/header/search/search.component';
 import { MainComponent } from './main-page/main/main.component';
 import {AngularFireModule} from 'angularfire2';
-
 import { firebaseConfig } from 'environments/config';
 import {AngularFireAuthModule} from 'angularfire2/auth';
 import { DashboardComponent } from './main-page/dashboard/dashboard.component';
@@ -24,7 +22,6 @@ import { RegComponent } from './reg/reg.component';
 import { AuthUserComponent } from './main-page/header/auth-user/auth-user.component';
 import {CookieService} from 'ngx-cookie-service';
 import { UserMenuComponent } from './main-page/header/user-menu/user-menu.component';
-import { SettingsComponent } from './main-page/settings/settings.component';
 import {UserService} from './services/user.service';
 import {AngularFireDatabaseModule} from 'angularfire2/database';
 import {AngularFireStorageModule} from 'angularfire2/storage';
@@ -45,6 +42,8 @@ import {SearchService} from './services/search.service';
 import { HomeComponent } from './main-page/main/home/home.component';
 import { CollectionService } from './services/collection.service';
 import { EditCollectionComponent } from './main-page/collection/edit-collection/edit-collection.component';
+import {CommonModule} from "@angular/common";
+import {SettingsComponent} from "./main-page/settings/settings.component";
 
 @NgModule({
   declarations: [
@@ -63,7 +62,6 @@ import { EditCollectionComponent } from './main-page/collection/edit-collection/
     RegComponent,
     AuthUserComponent,
     UserMenuComponent,
-    SettingsComponent,
     MessageComponent,
     NotFoundComponent,
     TopArtistsComponent,
@@ -74,6 +72,7 @@ import { EditCollectionComponent } from './main-page/collection/edit-collection/
     SearchListComponent,
     HomeComponent,
     EditCollectionComponent,
+    SettingsComponent
   ],
   imports: [
     BrowserModule,
@@ -84,6 +83,7 @@ import { EditCollectionComponent } from './main-page/collection/edit-collection/
     AngularFireStorageModule,
     FormsModule,
     HttpClientModule,
+    CommonModule
   ],
   providers: [
     AuthService,

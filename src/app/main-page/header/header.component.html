@@ -2,7 +2,7 @@
   <app-left-menu (click)="ngOnInit()"  class="inline-block"></app-left-menu>
   <app-search  class="inline-block"></app-search>
   <app-right-menu *ngIf="!isReg.isReg" class="inline-block"></app-right-menu>
-  <app-auth-user *ngIf="isReg.isReg" class="inline-block" (click)="hideMenu=!hideMenu"></app-auth-user>
+  <app-auth-user *ngIf="isReg.isReg" class="inline-block" (click)="Hide()"></app-auth-user>
   <app-language-selection  class="inline-block"></app-language-selection>
   <app-user-menu *ngIf="!hideMenu"></app-user-menu>
 </div>

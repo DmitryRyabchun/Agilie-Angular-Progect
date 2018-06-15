@@ -22,10 +22,10 @@ export class SearchListComponent implements OnInit {
   ngOnInit() {
   }
 
-  AddSong() {
+  AddSong(item) {
     this.name = prompt("Enter name of collection");
-    if(this.name != "") {
-      this.collection.addSong(this.name, this.searchResult[0].image[1]['#text'], this.searchResult[0].artist, this.searchResult[0].name);
+    if(this.name != "" && this.name != null && this.name != undefined && this.name != "null") {
+      this.collection.addSong(this.name, item.image[2]['#text'], item.artist, item.name);
     }
   }
 

@@ -12,7 +12,7 @@ export class UserMenuComponent implements OnInit {
 
   isSettings:boolean = false;
 
-  constructor(public auth: AuthService, private hide:HeaderComponent, ) {}
+  constructor(public auth: AuthService, private hide:HeaderComponent) {}
 
   ngOnInit() {
   }
@@ -20,6 +20,7 @@ export class UserMenuComponent implements OnInit {
   signOut(){
     this.closeMenu();
     this.auth.signOut();
+    this.auth.isOpen = false;
   }
 
   closeMenu() {

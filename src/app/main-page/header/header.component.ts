@@ -1,7 +1,6 @@
-import {animate, Component, OnInit, state, style, transition, trigger} from '@angular/core';
-import { CookieService } from 'ngx-cookie-service';
-import * as firebase from 'firebase';
+import {Component, OnInit} from '@angular/core';
 import {AuthService} from '../../services/auth.service';
+import {SearchService} from "../../services/search.service";
 
 @Component({
   selector: 'app-header',
@@ -12,11 +11,16 @@ export class HeaderComponent implements OnInit {
 
   hideMenu:boolean = true;
 
-  constructor(private cookieService: CookieService, private isReg:AuthService) {
+  constructor(public isReg:AuthService, private search: SearchService) {
     console.log(isReg);
   }
 
   ngOnInit() {
+  }
+
+  Hide() {
+    this.hideMenu = !this.hideMenu;
+    this.search.isList = false;
   }
 
 }

@@ -1,15 +1,17 @@
 <div class="container">
-  <div class="collection__albun">
-    <div class="collection__album-name_container" *ngFor="let item of HeaderList">
+  <div class="collection__albun" *ngFor="let item of HeaderList">
+    <div class="collection__album-name_container">
       <div class="collection__albun-name">
-        <p>{{item}}</p>
-        <div class="del"><img src="../../../assets/images/close-icon.png" alt=""></div>
-        <div class="edit"><img src="../../../assets/images/edit.png" alt=""></div>
+        <p>{{item.name}}</p>
+        <div class="del"><img src="../../../assets/images/close-icon.png" alt="" (click)="delCollection(item.name)"></div>
+        <!--<div class="edit"><img src="../../../assets/images/edit.png" alt=""></div>-->
       </div>
     </div>
     <div class="collection__albun-list">
-      <div class="collection__albun-list-item">
-        <p class="collection__albun-list-item_name">Hello world</p>
+      <div class="collection__albun-list-item" *ngFor="let item2 of item.songs">
+        <div class="del-song" (click)="delSong(item2.id, item.name)"><img src="../../../assets/images/close-icon.png" alt=""></div>
+        <img [src]="item2.img" alt="">
+        <p class="collection__albun-list-item_name">{{item2.name}}</p>
       </div>
     </div>
   </div>

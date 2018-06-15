@@ -3,7 +3,7 @@
     <img [src]="item.image[1]['#text']" alt="">
     <div class="search__list-item_name">{{item.artist + " - " + item.name}}</div>
     <div class="search__list-item_buttons">
-      <img src="../../../assets/images/add.png" alt="" (click)="AddSong()">
+      <img src="../../../assets/images/add.png" alt="" (click)="AddSong(item)">
     </div>
   </div>
 </div>

@@ -4,12 +4,14 @@
   overflow: auto;
   .collection__albun {
     .collection__album-name_container {
+      color: #E84F3C;
       height: 50px;
       padding-right: 10px;
-      background: lightgray;
       border-radius: 5px;
-      margin: 10px 20px;
+      clear: both;
+      margin: 10px 1%;
       padding-left: 15px;
+      box-shadow: 0px 10px 42px -8px #000000;;
       .collection__albun-name {
         overflow: auto;
         p {
@@ -40,13 +42,48 @@
         background-color: lightgray;
         width: 18.18%;
         margin-left: 1.5%;
-        height: 200px;
         float: left;
-        margin-bottom: 10px;
+        margin-bottom: 25px;
+        margin-top: 10px;
+        box-shadow: 0 4px 8px 0 rgba(20, 19, 24, 0.64);
+
+        .del-song {
+          position: relative;
+          z-index: 1000;
+          margin-bottom: -22%;
+          z-index: 1000;
+          img {
+            margin-left: 80%;
+            width: 18%;
+            height: 18%;
+            border-radius: 50%;
+            background-color: white;
+          }
+          img:hover {
+            cursor: pointer;
+          }
+        }
+
+        img {
+          position: relative;
+          z-index: 100;
+          width: 100%;
+          height: 100%;
+        }
 
         .collection__albun-list-item_name {
-          margin-top: 80%;
-          margin-left: 5%;
+          position: relative;
+          z-index: 1000;
+          margin-top: 20px;
+          padding-left: 4px;
+          margin-top: -28px;
+          margin-bottom: 0;
+          white-space: nowrap;
+          overflow: hidden;
+          text-shadow: -0 -1px 6px #000000, 0 -1px 6px #000000, -0 1px 6px #000000, 0 1px 6px #000000, -1px -0 6px #000000,
+          1px -0 6px #000000, -1px 0  6px #000000, 1px 0 6px #000000, -1px -1px 6px #000000, 1px -1px 6px #000000,
+          -1px  1px 6px #000000, 1px  1px 6px #000000, -1px -1px 6px #000000, 1px -1px 6px #000000, -1px  1px 6px #000000,
+          1px  1px 6px #000000;
         }
       }
 

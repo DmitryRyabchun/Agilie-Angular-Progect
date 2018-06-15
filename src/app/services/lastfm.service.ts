@@ -1,10 +1,7 @@
 import { Injectable } from '@angular/core';
 import 'rxjs/add/operator/map';
-import {text} from '@angular/core/src/render3/instructions';
 import 'rxjs/add/operator/toPromise';
 import {HttpClient} from '@angular/common/http';
-import {Config} from 'protractor';
-import { Observable } from 'rxjs/Rx';
 
 @Injectable()
 export class LastfmService {
@@ -19,7 +16,7 @@ export class LastfmService {
   }
 
   Search(search) {
-    this.request = "http://ws.audioscrobbler.com/2.0/?method=track.search&track="+search+"&api_key="+this.apiKey+"&format=json";
+    this.request = "https://ws.audioscrobbler.com/2.0/?method=track.search&track="+search+"&api_key="+this.apiKey+"&format=json";
     this.http.get(this.request).subscribe(data => {
       this.searchResult = data;
       console.log(this.searchResult);
@@ -27,7 +24,7 @@ export class LastfmService {
   }
 
   TopArtists(){
-    this.request = "http://ws.audioscrobbler.com/2.0/?method=chart.gettopartists&api_key="+this.apiKey+"&format=json&limit=6";
+    this.request = "https://ws.audioscrobbler.com/2.0/?method=chart.gettopartists&api_key="+this.apiKey+"&format=json&limit=6";
     this.http.get(this.request).subscribe(data => {
       this.dataTopArtists = data;
       this.TopArtistAlbums(data);
@@ -35,14 +32,14 @@ export class LastfmService {
   }
 
   TopArtistAlbums(mbid) {
-    this.request = "http://ws.audioscrobbler.com/2.0/?method=artist.gettopalbums&mbid="+mbid.artists.artist[0].mbid+"&api_key="+this.apiKey+"&format=json&limit=4";
+    this.request = "https://ws.audioscrobbler.com/2.0/?method=artist.gettopalbums&mbid="+mbid.artists.artist[0].mbid+"&api_key="+this.apiKey+"&format=json&limit=4";
     this.http.get(this.request).subscribe(data => {
       this.dataTopArtistsAlbums = data;
     });
   }
 
   TopTracks() {
-    this.request = "http://ws.audioscrobbler.com/2.0/?method=chart.gettoptracks&api_key="+this.apiKey+"&format=json&limit=5";
+    this.request = "https://ws.audioscrobbler.com/2.0/?method=chart.gettoptracks&api_key="+this.apiKey+"&format=json&limit=5";
     this.http.get(this.request).subscribe(data => {
       this.dataTrecks = data;
     });

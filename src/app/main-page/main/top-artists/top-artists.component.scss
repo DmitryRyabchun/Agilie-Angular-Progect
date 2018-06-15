@@ -11,14 +11,22 @@
     line-height: 0;
     float: left;
     box-shadow: 0 4px 8px 0 rgba(20,19,24,0.64);
+
+    img {
+      width: 100%;
+    }
     div {
       width: 100%;
-      padding-top: 90%;
-      padding-bottom: 10%;
+      margin-top: -8%;
+      margin-bottom: 8%;
       p {
         display: block;
         margin: 0 5%;
         height: 100%;
+        text-shadow: -0 -1px 6px #000000, 0 -1px 6px #000000, -0 1px 6px #000000, 0 1px 6px #000000, -1px -0 6px #000000,
+        1px -0 6px #000000, -1px 0  6px #000000, 1px 0 6px #000000, -1px -1px 6px #000000, 1px -1px 6px #000000,
+        -1px  1px 6px #000000, 1px  1px 6px #000000, -1px -1px 6px #000000, 1px -1px 6px #000000, -1px  1px 6px #000000,
+        1px  1px 6px #000000;
       }
       @media screen and (max-width: 900px) {
         p {
@@ -42,21 +50,27 @@
       float: left;
       .top-artists__albun-block {
         width: 75%;
-
         box-shadow: 0 4px 8px 0 rgba(20,19,24,0.64);
         background-color: lightgray;
         float: right;
         margin-left: 10px;
-        padding-top: 53.1%;
-        padding-bottom: 5%;
+
+        img {
+          width: 100%;
+        }
+
         .albun-block_name{
-          margin: 0;
           padding: 0;
           display: block;
           width: 100%;
           height: 0;
           font-size: 20px;
           margin-left: 10px;
+          margin-top: -26%;
+          text-shadow: -0 -1px 6px #000000, 0 -1px 6px #000000, -0 1px 6px #000000, 0 1px 6px #000000, -1px -0 6px #000000,
+          1px -0 6px #000000, -1px 0  6px #000000, 1px 0 6px #000000, -1px -1px 6px #000000, 1px -1px 6px #000000,
+          -1px  1px 6px #000000, 1px  1px 6px #000000, -1px -1px 6px #000000, 1px -1px 6px #000000, -1px  1px 6px #000000,
+          1px  1px 6px #000000;
         }
         .albun-block_treck-count {
           margin-bottom: 0;
@@ -76,7 +90,7 @@
       }
     }
     .margin {
-      margin-top: 5%;
+      margin-top: 12%;
     }
   }
 
@@ -93,13 +107,11 @@
 
     .top-artists__tor-artist_albums {
       width: 100%;
-      padding: 5% 2%;
+      padding: 5% 0;
       div {
-        width: 25%;
         .top-artists__albun-block {
-          width: 90%;
+          width: 100%;
           margin-right: 10%;
-          padding-top: 60%;
           display: block;
           margin: 0 auto;
         }
@@ -125,14 +137,14 @@
       div {
         width: 50%;
         .top-artists__albun-block {
-          width: 75%;
+          width: 78%;
           margin-right: 10%;
-          padding-top: 50%;
+
           display: block;
 
         }
         .margin {
-          margin-top: 5%;
+          margin-top: 12%;
         }
       }
     }
@@ -165,6 +177,10 @@
     p {
       margin-top: -30px;
       margin-left: 10%;
+      text-shadow: -0 -1px 6px #000000, 0 -1px 6px #000000, -0 1px 6px #000000, 0 1px 6px #000000, -1px -0 6px #000000,
+      1px -0 6px #000000, -1px 0  6px #000000, 1px 0 6px #000000, -1px -1px 6px #000000, 1px -1px 6px #000000,
+      -1px  1px 6px #000000, 1px  1px 6px #000000, -1px -1px 6px #000000, 1px -1px 6px #000000, -1px  1px 6px #000000,
+      1px  1px 6px #000000;
     }
   }
 }
@@ -174,10 +190,10 @@
     padding-top: 20px;
     width: 94%;
     margin-left: 3%;
-    .top-artists__artists:nth-child(1), .top-artists__artists:nth-child(2), .top-artists__artists:nth-child(3){
+    .top-artists__artists:nth-child(2), .top-artists__artists:nth-child(3), .top-artists__artists:nth-child(4){
       width: 33.33%;
     }
-    .top-artists__artists:nth-child(4), .top-artists__artists:nth-child(5){
+    .top-artists__artists:nth-child(5), .top-artists__artists:nth-child(6){
       width: 50%;
     }
   }

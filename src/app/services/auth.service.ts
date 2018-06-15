@@ -14,6 +14,8 @@ export class AuthService {
     uid: ''
   }
 
+  isOpen:boolean = false;
+
   constructor(private firebaseAuth: AngularFireAuth, private router: Router, private ngZone: NgZone) {
 
     firebaseAuth.authState.subscribe (auth => {
